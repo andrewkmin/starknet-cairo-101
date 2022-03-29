@@ -1,27 +1,27 @@
 # StarkNet Cairo 101
 **Get started with Cairo with this simple tutorial. 
-Complete the puzzles/exercises, get tokens and learn about StarkNet smart contracts!**
+Complete the puzzles/exercices, get tokens and learn about StarkNet smart contracts!**
 ​
 ## Introduction
 ### Disclaimer
 ​
-Don't expect any kind of benefit from using this, other than learning a bunch of cool stuff about StarkNet, the first general purpose validity rollup on the Ethereum Mainnnet.
-​
+Don't expect any kind of benefit from using this, other than learning a bunch of cool stuff about StarkNet, the first general purpose validity rollup on the Ethereum Mainnet.
+
 StarkNet is still in Alpha. This means that development is ongoing, and the paint is not dry everywhere. Things will get better, and in the meanwhile, we make things work with a bit of duct tape here and there!
 ​
 ## How it works
 ​
-**Complete the exercises and get tokens!**
+**Complete the exercices and get tokens!**
 This workshop is a set of smart contracts deployed on StarkNet Alpha on testnet. 
-Each smart contract is an exercice/puzzle - which outlines a feature of the Cairo Smart contract language. 
+Each smart contract is an exercice/puzzle - which outlines a feature of the Cairo smart contract language. 
 Completing the exercice will credit you with points, in the form of an [ERC20 token](contracts/token/TDERC20.cairo).
 ​
 This workshop focuses on *reading* Cairo code and StarkNet smart contracts, in order to understand its syntax. 
 You do not need to code or install anything on your machine in order to follow and complete it. 
 ​
-Getting started (doing the first two exercises) will take you some time, in order to get into the tutorial. Hang on! Once there, things will flow more easily. You're learning!
+Getting started (doing the first two exercices) will take you some time, in order to get into the tutorial. Hang on! Once there, things will flow more easily. You're learning!
 ​
-This workshop is the first in a serie that will cover broad smart contract concepts (writing and deploying ERC20/ERC721, bridging assets, L1 <-> L2 messaging...). 
+This workshop is the first in a series that will cover broad smart contract concepts (writing and deploying ERC20/ERC721, bridging assets, L1 <-> L2 messaging...). 
 Interested in helping writing those? [Reach out](https://twitter.com/HenriLieutaud)!
 ​
 ### Providing feedback
@@ -38,11 +38,11 @@ Do you have a question? Join our [Discord server](https://discord.gg/B7PevJGCCw)
 **In order to complete the tutorial you need to collect points.** These points will be owned by a smart contract wallet, that you need to deploy.
 -   The easiest way to set one up is currently to use Argent X ([download the chrome extension](https://chrome.google.com/webstore/detail/argent-x-starknet-wallet/dlcobpjiigpikoobohmabehhmhfoodbb/)  or  [check their repo](https://github.com/argentlabs/argent-x)).
 -   Follow the instructions to install the extension and deploy an account contract
--   Make sure you are on the Goerli testnet network
+-   Make sure you are on the Goerli testnet network (search for `gor` on https://chainlist.org/ to add to your wallet. Görli is an alternate spelling)
 -   The tutorial's points are held in contract  `0x074002c7df47096f490a1a89b086b8a468f2e7c686e04a024d93b7c59f934f83`. Click on "add token" in Argent X to get your points balance to show up there!
 - Connect Voyager to your account contract! This will allow you to broadast your transactions through your wallet.
 ​
-### Using voyager
+### Using Voyager
 For this tutorial we'll interact with our contracts through [Voyager](https://goerli.voyager.online/), StarkNet's block explorer. 
 
 -> Connect Voyager to your account contract! This will allow you to broadast your transactions through your wallet.
@@ -50,7 +50,7 @@ For this tutorial we'll interact with our contracts through [Voyager](https://go
 When looking for a contract / transaction, always make sure you are on the Goerli version of Voyager!
 -   Access your transactions with URL  [https://goerli.voyager.online/tx/your-tx-hash](https://goerli.voyager.online/tx/your-tx-hash)
 -   Access a contract with URL  [https://goerli.voyager.online/contract/your-contract-address](https://goerli.voyager.online/contract/your-contract-address)
--   Access read/write functions of the contract with the "read/write contract" tab in voyager
+-   Access read/write functions of the contract with the "read/write contract" tab in Voyager
 ​
 ### Getting points
 ​
@@ -74,14 +74,14 @@ Your points will get credited in Argent X; though this may take some time. If yo
 ​
 #### Transaction status
 ​
-You sent a transaction, and it is shown as "undetected" in voyager? This can mean two things:
+You sent a transaction, and it is shown as "undetected" in Voyager? This can mean two things:
 ​
--   Your transaction is pending, and will be included in a block shortly. It will then be visible in voyager.
+-   Your transaction is pending, and will be included in a block shortly. It will then be visible in Voyager.
 -   Your transaction was invalid, and will NOT be included in a block (there is no such thing as a failed transaction in StarkNet).
 ​
-You can (and should) check the status of your transaction with the following URL  [https://alpha4.starknet.io/feeder_gateway/get_transaction_receipt?transactionHash=](https://alpha4.starknet.io/feeder_gateway/get_transaction_receipt?transactionHash=)  , where you can append your transaction hash.
+You can (and should) check the status of your transaction with the following URL  [https://alpha4.starknet.io/feeder_gateway/get_transaction_receipt?transactionHash=](https://alpha4.starknet.io/feeder_gateway/get_transaction_receipt?transactionHash=), where you can append your transaction hash.
 ​
-### Exercises & Contract addresses 
+### Exercices & Contract addresses 
 ### Contract addresses 
 |Topic|Contract code|Contract on voyager|
 |---|---|---|
